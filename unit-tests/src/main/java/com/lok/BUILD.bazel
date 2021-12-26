@@ -1,0 +1,8 @@
+java_binary(
+    name = "hello-world",
+    srcs = ["HelloWorld.java"],
+    main_class = "com.lok.HelloWorld",
+    deps = [
+        "//src/main/java/com/lok/messenger:messenger-lib",
+    ],
+)

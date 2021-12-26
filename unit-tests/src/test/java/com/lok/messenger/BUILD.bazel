@@ -1,0 +1,9 @@
+java_test(
+    name = "messenger-test",
+    srcs = ["MessengerTest.java"],
+    test_class = "com.lok.messenger.MessengerTest",
+    deps = [
+        "//src/main/java/com/lok/messenger:messenger-lib",
+        "@maven//:junit_junit",
+    ],
+)

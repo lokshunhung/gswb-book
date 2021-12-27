@@ -1,0 +1,10 @@
+load("//macros:junit5.bzl", "java_junit5_test")
+
+java_junit5_test(
+    name = "messenger-test",
+    srcs = ["MessengerTest.java"],
+    test_package = "com.lok.messenger",
+    deps = [
+        "//src/main/java/com/lok/messenger:messenger-lib",
+    ],
+)

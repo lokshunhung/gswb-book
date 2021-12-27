@@ -22,7 +22,7 @@ def java_junit5_test(
         if arg in kwargs.keys():
             kwargs.pop(arg)
 
-    junit_console_args = []
+    junit_console_args = ["--disable-ansi-colors", "--disable-banner"]
     if test_package:
         junit_console_args += ["--select-package", test_package]
     else:

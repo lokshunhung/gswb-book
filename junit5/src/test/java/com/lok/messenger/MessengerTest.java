@@ -8,7 +8,7 @@ public class MessengerTest {
     @Test
     @DisplayName("Can retrieve message")
     public void testGetMessage() {
-        Messenger messenger = new Messenger();
+        var messenger = new Messenger();
         assertEquals("HELLO WORLD!", messenger.getMessage());
     }
 }
